@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+.header-section {
+    padding: 40px 0;
+    background-color: rgb(238, 242, 246);
+}
+/* margin-bottom-100px */
+.header-section,.team-section,.feature-section,.fact-section,.sponsor-section {
+    margin-bottom: 100px;
+}
+/* margin-auto */
+header,.team,.feature,.fact,.sponsor,.fact-card-container,.sponsor-content {
+    margin: auto;
+    width: 70%;
+}
+.header-content,ul,.team,.feature,.fact-card-container,.sponsor-img-container {
+    display: flex;
+    justify-content: space-between;
+}
+.header-content,ul,.team,.experience-div {
+    align-items: center;
+}
+.header-content,.team-title,.feature-title {
+    margin-bottom: 40px; 
+}
+.section-title {
+    font-size: 44px;
+}
+ul li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+ul a {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.section-title,.desc,.feature-card h3 {
+    margin-bottom: 24px;
+}
+.banner-content {
+    margin: auto auto 44px auto;
+    max-width: 800px;
+}
+.banner-content,.experience-div {
+    text-align: center;
+}
+.banner-title {
+    font-size: 64px;
+}
+.desc {
+    color: grey;
+}
+.btn:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+.btn {
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: tomato;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+.img img{
+    width: 100%;
+}
+/* team-style */
+.team,.feature,.fact,.sponsor {
+    width: 94%;
+}
+.feature-section {
+    position: relative;
+}
+.team {
+    gap: 80px;
+}
+.feature {
+    gap: 150px;
+}
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+#feature-orange-text {
+    color: tomato;
+}
+#quick-list-grey-text {
+    color: grey;
+    font-weight: 500;
+}
+.feature-title {
+    border-left: 8px solid tomato;
+    border-radius: 5px;
+}
+.feature-title,.feature-desc {
+    padding-left: 24px;
+}
+.feature-card {
+    box-shadow: 0px 0px 7px 1px rgba(196, 191, 191, 0.75);
+    border-radius: 5px;
+    padding: 40px 24px;
+    margin-bottom: 20px;
+}
+.experience-div {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 30%;
+    bottom: -60px;
+    background-color: tomato;
+    width: 340px;
+    height: 200px;
+    color: white;
+    border-radius: 5px;
+}
+.experience-div h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.experience-div p {
+    font-size: 20px;
+}
+/* fact-style */
+.fact-card-container {
+    width: 90%;
+}
+.fact-card:hover {
+    transition: opacity 2s;
+    opacity: .7;
+    cursor: pointer;
+}
+.fact-card {
+    background-color:rgb(57, 170, 201);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 220px;
+    text-align: center;
+}
+.fact-card-img,.fact-card-title {
+    margin-bottom: 10px;
+}
+.fact-card h3 {
+    color: white;
+}
+.sponsor-content {
+    width: 90%;
+    text-align: center;
+}
+.sponsor-desc {
+    margin-bottom: 50px;
+}
+.sponsor-img:hover img{
+    transform: scale(.8);
+    cursor: pointer;
+    transition: transform 1s;
+}
+@media only screen and (max-width: 576px) {
+    header,.team,.feature,.fact,.sponsor,.fact-card-container,.sponsor-content {
+        margin: auto;
+        width: 90%;
+    }
+    .team,.feature,.fact-card-container,.sponsor-img-container  {
+        flex-direction: column;
+    }
+    .fact-card-container,.sponsor-img-container {
+        gap: 20px;
+        width: 100%;
+    }
+    .fact-card {
+        margin: auto;
+        width: 80%;
+    }
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-title {
+        font-size: 52px;
+    }
+    .team-img-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature-img img{        
+        width: 100%;
+    }
+    .experience-div {
+        position: static;
+        margin-left: 20px;
+    }
+    .img img{
+        height: 320px;
+    }
+}
